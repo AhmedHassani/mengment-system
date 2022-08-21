@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Oct 26, 2019, 9:31:11 PM
+    Author     : ahmed Rhman
+*/
+
+
+.root {
+    -fx-background-color:#ffffff;
+
+}
+
+.dialog-pane {
+    -fx-background-color:rgb(59,58,69);
+
+}
+
+/* Content area */
+.dialog-pane > .content {
+    -fx-background-color:rgb(59,58,69);
+    -fx-alignment: center-right;
+    font-family: 'KacstDecorative';
+    -fx-text-fill:#fff;
+
+
+
+}
+
+.dialog-pane > .content.label {
+    -fx-font-size: 12pt;
+}
+
+
+.dialog-pane .header-panel {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: #bbbbbb;
+}
+
+
+.dialog-pane .header-panel .label {
+
+}
+
+/* Button style */
+.dialog-pane .button {
+    -fx-text-fill: black;
+    -fx-font-size: 12pt;
+    -fx-background-color:#fff;
+}
+.dialog-pane .button:hover {
+    -fx-background-color: #d0d9e9;
+}
+
+.dialog-pane .button:pressed {
+    -fx-background-color: #4d86f1;
+    -fx-text-fill: #ffffff;
+
+}
+
+/* Custom graphics */
+.custom-confirmation-graphic,
+.custom-error-graphic,
+.custom-information-graphic,
+.custom-warning-graphic {
+    -fx-font-size: 36pt;
+
+}
+
+.custom-confirmation-graphic {
+    -fx-text-fill: forestgreen;
+
+}
+
+.custom-error-graphic {
+    -fx-text-fill: #d7423c;
+    ;
+}
+
+.custom-information-graphic {
+    -fx-text-fill: royalblue;
+
+}
+
+.custom-warning-graphic {
+    -fx-text-fill: gold;
+
+}

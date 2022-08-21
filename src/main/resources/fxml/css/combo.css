@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 8, 2019, 11:07:25 PM
+    Author     : ahmed
+*/
+
+.radius{
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20; 
+}
+.combo-box{
+    -fx-border-color: #fff;
+      -fx-background-color:#fff;
+    -fx-border-style:none;
+    -fx-border-width:0;
+    -fx-border-radius: 20,20,20,20;
+
+}
+
+.combo-box.list-cell
+{
+    -fx-background: white;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+}
+.combo-box .arrow{
+    -fx-background-color:#5fba7d;
+}
+.combo-box .arrow-button{
+    -fx-background-color: white;
+    -fx-border-style:none;
+}
+.combo-box .arrow-button{
+    -fx-background-color: white;
+
+}
+.combo-box .list-cell{
+    -fx-background-color: white;
+
+}

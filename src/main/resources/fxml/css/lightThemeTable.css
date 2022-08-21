@@ -1,0 +1,81 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 8, 2019, 7:46:32 PM
+    Author     : ahmed
+*/
+
+.background {
+    -fx-background-color: #ffffff;
+}
+.label {
+    -fx-font-size: 11pt;
+    -fx-text-fill:#000;
+    -fx-opacity: 0.8;
+    -fx-alignment: center;
+}
+/* tableview without selecter border*/
+.table-view {
+    -fx-base:derive(#dedede, 100%);
+    -fx-control-inner-background:rgb(255,255,255);
+    -fx-background-color: #fff;
+    -fx-table-cell-border-color:rgb(255,255,255);
+    -fx-table-header-border-color:#fff;
+    -fx-padding: 1;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 35;
+    -fx-border-width: 0 0 3 0;
+    -fx-background-color: #fff;
+    -fx-border-color: 
+        #c62b00
+        #cf1
+        #5fba7d
+        #452;
+    -fx-border-insets: 0 5 1 0;
+}
+.table-view .column-header .label {
+    -fx-font-size: 12pt;
+    -fx-text-fill:#000;
+    -fx-alignment: center;
+    -fx-opacity: 1;
+}
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color:#5fba7d;
+}
+
+.table-view .cell{
+    -fx-cell-size:50;
+    -fx-text-fill:#000;
+    -fx-alignment: center;
+    -fx-font-size:16px;
+    -fx-border-width: 0 0 1px 1px;
+    -fx-border-style: solid;
+    -fx-background-color: #fff;
+    -fx-border-color: 
+        #fff
+        #fff
+        rgba(222,222,222,0.4)
+        #fff;
+}
+
+.table-row-cell:selected .table-cell {
+
+}
+.table-row-cell:hover .table-cell {
+    -fx-background-color:rgba(222,222,222,0.8);
+    -fx-text-fill:#000;
+    -fx-font-size:18px;
+}
+
+
+
+
+
+
+
+

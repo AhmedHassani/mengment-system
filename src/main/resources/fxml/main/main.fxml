@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ahd.main.Controller.MainController">
+<BorderPane fx:id="view">
+   <top>
+      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="1000.0" stylesheets="@../css/main.css" BorderPane.alignment="CENTER">
+         <styleClass>
+            <String fx:value="title" />
+            <String fx:value="efect" />
+         </styleClass>
+         <children>
+            <HBox prefHeight="30.0" prefWidth="563.0">
+               <children>
+                  <HBox alignment="CENTER" onMouseClicked="#sideList" prefHeight="30.0" prefWidth="38.0" styleClass="line_bottom" stylesheets="@../css/main.css">
+                     <children>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../menu1.png" />
+                           </image>
+                           <effect>
+                              <Lighting diffuseConstant="1.36">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                              </Lighting>
+                           </effect>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="137.0" styleClass="line_bottom" stylesheets="@../css/main.css">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #c3c3c3;" stylesheets="@../css/style.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USER" size="20" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="radius" />
+                              <String fx:value="op_icon" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label text="Dev Ahmed ">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="48.0" layoutY="10.0" prefHeight="35.0" prefWidth="61.0" styleClass="line_bottom" stylesheets="@../css/main.css">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #c3c3c3;" stylesheets="@../css/style.css">
+                           <children>
+                              <FontAwesomeIconView fill="WHITE" glyphName="BELL" size="20" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="radius" />
+                              <String fx:value="op_icon" />
+                           </styleClass>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="20.0" layoutY="13.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: red;" styleClass="radius" stylesheets="@../css/style.css" translateX="-7.0" translateY="-7.0">
+                           <children>
+                              <Label text="+9" textFill="WHITE">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="248.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#fullScreen" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #c3c3c3;" stylesheets="@../css/style.css">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SQUARE" size="10" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radius" />
+                        <String fx:value="op_icon" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="732.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: #c3c3c3;" stylesheets="@../css/style.css">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="MINUS" size="14" translateY="1.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radius" />
+                        <String fx:value="op_icon" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="732.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Exited" prefHeight="20.0" prefWidth="20.0" style="-fx-background-color: red;" stylesheets="@../css/style.css">
+                     <children>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CLOSE" size="13" translateY="-1.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="radius" />
+                        <String fx:value="op_icon" />
+                     </styleClass>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox fx:id="side" alignment="TOP_CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="39.0" style="-fx-border-color: #c3c3c3; -fx-border-width: 0 1 0 0;" styleClass="title" stylesheets="@../css/main.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView id="fs" fill="#c3c3c3" glyphName="WINDOWS" size="27" styleClass="fs" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" glyphName="USER_CIRCLE" size="27" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="158.0" onMouseClicked="#prodcut" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" fontSmoothingType="LCD" glyphName="PRODUCT_HUNT" size="27">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="118.0" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" fontSmoothingType="LCD" glyphName="PIE_CHART" size="27">
+                     <font>
+                        <Font size="8.0" />
+                     </font></FontAwesomeIconView>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="158.0" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" fontSmoothingType="LCD" glyphName="TICKET" onMouseClicked="#Opend"
+                                       size="27">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="82.0" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" glyphName="HISTORY" size="27" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="286.0" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" fontSmoothingType="LCD" glyphName="LOCK" size="27">
+                     <font>
+                        <Font size="8.0" />
+                     </font>
+                  </FontAwesomeIconView>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="154.0" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" glyphName="ARROW_CIRCLE_ALT_RIGHT" size="27" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="190.0" prefHeight="36.0" prefWidth="39.0" styleClass="icon" stylesheets="@../css/main.css">
+               <children>
+                  <FontAwesomeIconView fill="#c3c3c3" glyphName="INFO_CIRCLE" size="27" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <TabPane fx:id="tabpane" prefHeight="200.0" prefWidth="200.0" stylesheets="@../css/tabpane.css" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
+</StackPane>

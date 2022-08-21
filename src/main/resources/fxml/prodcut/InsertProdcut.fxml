@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="main_layou_program" prefHeight="700.0" prefWidth="830.0" style="-fx-border-color: #dedede; -fx-border-width: 2;" stylesheets="@../css/autocomplete.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ahd.prodcut.controller.InsertProdcut">
+   <children>
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane fx:id="main" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" HBox.hgrow="ALWAYS" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="696.0" prefWidth="411.0" style="-fx-background-color: #fff;" styleClass="efect5">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="278.0" prefWidth="411.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="412.0" style="-fx-background-color: rgb(244, 243, 242);">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="id_mat">
+                                       <HBox.margin>
+                                          <Insets left="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Label text="معلموات اساسية ">
+                                 <font>
+                                    <Font name="KacstDecorative" size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <HBox alignment="CENTER" onMouseClicked="#Close" prefHeight="39.0" prefWidth="39.0" styleClass="close" stylesheets="@../css/style.css">
+                                 <children>
+                                    <Label text="X" textFill="#fcf8f8">
+                                       <font>
+                                          <Font name="System Bold" size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <stylesheets>
+                              <URL value="@../css/main.css" />
+                              <URL value="@../css/style.css" />
+                           </stylesheets>
+                           <styleClass>
+                              <String fx:value="title" />
+                              <String fx:value="efect2" />
+                           </styleClass>
+                        </HBox>
+                        <Separator prefWidth="200.0" />
+                        <VBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="380.0" VBox.vgrow="NEVER">
+                           <children>
+                              <JFXTextField fx:id="name" alignment="CENTER_RIGHT" focusColor="#4eb769" labelFloat="true" maxHeight="-Infinity" minHeight="-Infinity" prefColumnCount="10" prefHeight="20.0" prefWidth="280.0" promptText="اسم المادة" unFocusColor="#c2c2c2">
+                                 <font>
+                                    <Font name="KacstDecorative" size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="15.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="380.0" VBox.vgrow="NEVER">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="5.0" />
+                           </VBox.margin>
+                           <children>
+                              <JFXTextField fx:id="price" alignment="CENTER_RIGHT" focusColor="#4eb769" labelFloat="true" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefColumnCount="10" prefHeight="20.0" prefWidth="280.0" promptText="سعر المادة" unFocusColor="#c2c2c2">
+                                 <font>
+                                    <Font name="KacstDecorative" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER_RIGHT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="380.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <JFXTextField fx:id="set" alignment="CENTER_RIGHT" focusColor="#4eb769" labelFloat="true" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#getSets" prefColumnCount="10" prefHeight="20.0" prefWidth="280.0" promptText="المجموعة او الصنف" unFocusColor="#c2c2c2">
+                                 <font>
+                                    <Font name="KacstDecorative" size="13.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="2.0" />
+                                 </padding>
+                              </JFXTextField>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="411.0">
+                           <children>
+                              <Button fx:id="but_save" mnemonicParsing="false" onMouseClicked="#InsertProdecut" prefHeight="35.0" prefWidth="120.0" styleClass="but" stylesheets="@../css/style.css" text="أنشاء بطاقة مادة">
+                                 <font>
+                                    <Font name="KacstDecorative" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="412.0" style="-fx-background-color: rgb(244, 243, 242);">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+                        <Label text="معلموات أظافية  ">
+                           <font>
+                              <Font name="KacstDecorative" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <stylesheets>
+                        <URL value="@../css/main.css" />
+                        <URL value="@../css/style.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="title" />
+                        <String fx:value="efect2" />
+                     </styleClass>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+                  <VBox alignment="CENTER" prefHeight="354.0" prefWidth="411.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ToolBar orientation="VERTICAL" prefHeight="333.0" prefWidth="410.0" style="-fx-background-color: #fff;" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <items>
+                              <HBox onMouseClicked="#LoadAll" prefHeight="42.0" prefWidth="398.0" style="-fx-border-color: rgba(222,222,222,0.5); -fx-border-radius: 20 20 20 20; -fx-border-width: 0 0 3px 0;" stylesheets="@../css/style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="عام" textFill="#252424">
+                                             <font>
+                                                <Font name="KacstDecorative" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="60.0">
+                                       <children>
+                                          <Label text="1#">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="select" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" onMouseClicked="#LaodPrices" prefHeight="42.0" prefWidth="398.0" style="-fx-border-color: rgba(222,222,222,0.5); -fx-border-radius: 20 20 20 20; -fx-border-width: 0 0 3px 0;" stylesheets="@../css/style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="الاسعار" textFill="#252424">
+                                             <font>
+                                                <Font name="KacstDecorative" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="60.0">
+                                       <children>
+                                          <Label text="2#">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="select" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="52.0" onMouseClicked="#LoadUint" prefHeight="42.0" prefWidth="398.0" style="-fx-border-color: rgba(222,222,222,0.5); -fx-border-radius: 20 20 20 20; -fx-border-width: 0 0 3px 0;" stylesheets="@../css/style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../css/style.css" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="الوحدات" textFill="#252424">
+                                             <font>
+                                                <Font name="KacstDecorative" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="60.0">
+                                       <children>
+                                          <Label text="3#">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="select" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="94.0" onMouseClicked="#LoadStor" prefHeight="42.0" prefWidth="398.0" style="-fx-border-color: rgba(222,222,222,0.5); -fx-border-radius: 20 20 20 20; -fx-border-width: 0 0 3px 0;" stylesheets="@../css/style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../css/style.css" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="الكميات المستوعات" textFill="#252424">
+                                             <font>
+                                                <Font name="KacstDecorative" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="60.0">
+                                       <children>
+                                          <Label text="4#">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="select" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="136.0" onMouseClicked="#Loadsetting" prefHeight="42.0" prefWidth="398.0" style="-fx-border-color: rgba(222,222,222,0.5); -fx-border-radius: 20 20 20 20; -fx-border-width: 0 0 3px 0;" stylesheets="@../css/style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="التاريخ" textFill="#252424">
+                                             <font>
+                                                <Font name="KacstDecorative" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="60.0">
+                                       <children>
+                                          <Label text="5#">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="select" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="178.0" onMouseClicked="#LoadOther" prefHeight="42.0" prefWidth="398.0" style="-fx-border-color: rgba(222,222,222,0.5); -fx-border-radius: 20 20 20 20; -fx-border-width: 0 0 3px 0;" stylesheets="@../css/style.css">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../css/style.css" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label text="أخرى" textFill="#252424">
+                                             <font>
+                                                <Font name="KacstDecorative" size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="60.0">
+                                       <children>
+                                          <Label text="6#">
+                                             <font>
+                                                <Font name="System Bold" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="select" />
+                                    <String fx:value="radius" />
+                                 </styleClass>
+                              </HBox>
+                           </items>
+                        </ToolBar>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+   <styleClass>
+      <String fx:value="mainFxmlClass" />
+      <String fx:value="radius" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,29 @@
+.jfx-text-field
+{
+    -jfx-focus-color: #4eb769;
+}
+
+.text-field:focused {
+    -fx-background-color: #a9a9a9 , white , white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+
+.text-field
+{
+    -fx-prompt-text-fill: #000;
+    -fx-text-fill: #c3c3c3;
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#dedede;
+    -fx-border-style:solid;
+    -fx-border-width:2;
+    -fx-focus-color:#dedede;;
+    -fx-border-radius:  10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+    -fx-highlight-fill: #dedede;
+}
+
+
+.text-field .input-line
+{
+     -fx-background-color#dedede; /*Yellow - bottom bar*/
+}

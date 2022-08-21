@@ -1,0 +1,319 @@
+.efect{
+    -fx-background-color:#ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0.8,0.8), 15, 0,0, 0);
+}
+.efect5{
+    -fx-background-color:#ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgb(205, 205, 205),5, 0,0, 0);
+}
+.efect3{
+    -fx-background-color:#ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgb(205, 205, 205),3, 0,0, 0);
+}
+.efect2{
+    -fx-background-color:#ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgb(205, 205, 205),2, 0,0, 0);
+}
+.just_efect{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0.8,0.8),5, 0,0, 0);
+}
+.radius{
+    -fx-background-radius: 30 30 30 30;
+}
+.cercle{
+    -fx-background-radius: 40 40 40 40;
+    -fx-border-radius: 70 70 70 70;
+
+}
+.
+.border_img{
+    -fx-background-radius: 10 10 10 10;
+
+}
+.unradius{
+    -fx-background-radius: 0 0 0 0;
+
+}
+
+.filed{
+    -fx-background-radius: 10 0 0 10;
+}
+.panefiled{
+    -fx-background-radius: 0 10 10 0;
+}
+.non_border{
+    -fx-padding: 5;
+    -fx-border-style: none;
+    -fx-border-width: 0;
+    -fx-border-insets: 0;
+}
+.readus{
+
+    -fx-background-radius: 10 0 0 10;
+
+}
+.Button{
+
+    -fx-background-radius: 10 10 10 10;
+
+}
+.rb{
+    -fx-background-radius: 0 10 10 0;
+}
+.but2{
+    -fx-background-radius: 10 10 10 10;
+}
+.op{
+    -fx-background-color:#ffffff;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0.8,0.8), 2, 0,0, 0);
+}
+.select{
+    -fx-background-color :#fff;
+}
+.select:hover{
+    -fx-background-color :#dedede;
+}
+.but_one:hover{
+    -fx-border-color:#415eeb;
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:#fff;
+    -fx-text-fill:#232323;
+    -fx-border-width: 2 2 2 2;
+
+}
+.but_one{
+    -fx-border-color: #415eeb;
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:#415eeb;
+    -fx-border-width: 2 2 2 2;
+    -fx-text-fill: #fff;
+}
+.but_two{
+
+    -fx-border-color:rgb(220, 53, 69);
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:rgb(220, 53, 69);
+    -fx-text-fill: #fff;
+    -fx-font-size:13px;
+    -fx-graphic: url("/templete/icon/tar_r.jpg");
+}
+.but_two:hover{
+
+    -fx-border-color:rgb(220, 53, 69);
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-border-width: 2 2 2 2;
+    -fx-background-color:#fff;
+    -fx-text-fill:#232323;
+    -fx-font-size:13px;
+    -fx-graphic: url("/templete/icon/tar.jpg");
+
+}
+
+.but_th{
+    -fx-border-color:rgb(40, 167, 69);
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:rgb(40, 167, 69);
+    -fx-text-fill: #fff;
+    -fx-font-size:13px;
+}
+.but_th:hover{
+    -fx-border-color:rgb(40, 167, 69);
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:#fff;
+    -fx-border-width: 2 2 2 2;
+    -fx-text-fill: #232323;
+    -fx-font-size:13px;
+}
+.toggle-button {
+    -fx-graphic: url('/templete/icon/add-icon(2).png');
+}
+
+.cross {
+    -fx-background-color:#dedede;
+
+}
+.cross:hover {
+    -fx-background-color:#28a745;
+}
+
+.cross1 {
+    -fx-background-color:#dedede;
+
+}
+.cross1:hover {
+    -fx-background-color:#d7423c;
+}
+.img{
+    -fx-image: url('/templete/icon/edit_1.png');
+
+}
+.img:hover{
+    -fx-image: url('/templete/icon/edit.png');
+}
+.cross2{
+    -fx-background-color:#dedede;
+
+}
+.cross2:hover > .img{
+    -fx-background-color:#8182e3;
+}
+.img_b{
+    -fx-image: url('/templete/icon/rubbish-b1.png');
+}
+.img_r{
+    -fx-image: url('/templete/icon/rubbish-r.png');
+}
+.s{
+    -fx-background-color:#fff;
+    -fx-background-radius: 30 30 30 30;
+}
+.s_b{
+
+    -fx-background-color:#dedede;
+    -fx-background-radius: 30 30 30 30;
+}
+
+
+.img_ed{
+    -fx-image: url('/templete/icon/edit.png');
+}
+.img_ed_b{
+    -fx-image: url('/templete/icon/edit_1.png');
+}
+.s1{
+    -fx-background-color:#fff;
+    -fx-background-radius: 30 30 30 30;
+}
+.s1_b{
+
+    -fx-background-color:#dedede;
+    -fx-background-radius: 30 30 30 30;
+}
+
+.select_item_ed{}
+.select_item_del{}
+.select_item_ed:hover{
+    -fx-background-color:rgba(59,58,69,0.8);
+    -fx-opacity: 0.8;
+}
+.select_item_del:hover{
+    -fx-background-color:rgba(59,58,69,0.8);
+    -fx-background-radius:20  0 0 20;
+    -fx-opacity: 0.8;
+}
+.line_bottom_best{
+    -fx-border-color: rgba(222,222,222,0.5);
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-color:#fff;
+    -fx-background-radius: 20 20 20 20;
+}
+.line_bottom_best:hover{
+    -fx-border-color:rgba(222,222,222,0.2);
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-color:#dedede;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.op_icon{}
+.op_icon:hover{
+   -fx-opacity: 0.4;
+}
+
+.but:hover{
+    -fx-border-color: #00af50;
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:#fff;
+    -fx-text-fill:#092848;
+    -fx-font-size:14px;
+    -fx-border-width:2;
+}
+.but{
+    -fx-border-color: #00af50;
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color: #00af50;
+    -fx-border-width: 2 2 2 2;
+    -fx-text-fill:#fff;
+    -fx-border-width:2;
+    -fx-font-size:14px;
+}
+.but2{
+    -fx-background-color:#fff;
+}
+.but2:focused{
+    -fx-background-color:#fff, #fff;
+}
+.but3{
+    -fx-border-color: #dedede;
+    -fx-background-color:#fff;
+}
+.but3:hover{
+    -fx-border-color: #dedede;
+    -fx-background-color:rgb(11, 34, 57);
+}
+
+.close{
+    -fx-background-color:#00af50
+}
+
+.close:hover{
+    -fx-background-color:#ff3300;
+
+}
+
+
+.textfiled{
+    -fx-background-radius: 10 10 10 10;
+    -fx-border-color:#dedede;
+    -fx-border-style:solid;
+    -fx-border-width:2;
+    -fx-focus-color:#dedede;;
+    -fx-border-radius:  10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+}
+
+.textfiled:focused{
+    -fx-background-color: #dedede, #fff;
+}
+.textfiled:hover{
+    -fx-background-radius: 10 10 10 10;
+    -fx-focus-color:#dedede;;
+    -fx-border-color:#dedede;;
+    -fx-border-style:solid;
+    -fx-border-width:2;
+    -fx-border-radius:  10 10 10 10;
+    -fx-background-radius: 10 10 10 10;
+
+}
+
+.but4:hover{
+    -fx-border-color: #ff3300;
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:#fff;
+    -fx-text-fill:#ff3300;
+    -fx-font-size:14px;
+    -fx-border-width:2;
+}
+
+.but4{
+    -fx-border-color: #ff3300;
+    -fx-border-radius: 20,20,20,20;
+    -fx-background-radius:  20,20,20,20;
+    -fx-background-color:#ff3300;
+    -fx-text-fill:#fff;
+    -fx-font-size:14px;
+    -fx-border-width:2;
+}
+
+
+

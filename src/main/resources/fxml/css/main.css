@@ -1,0 +1,32 @@
+
+.mainFxmlClass {
+
+}
+.efect{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0.8,0.8), 3, 0,0, 0);
+}
+
+.icon:hover{
+    -fx-border-width: 0 0 0 3px;
+    -fx-border-color: #15c97b;
+    -fx-background-color:rgba(21, 201, 123, 0.4);
+}
+
+
+.icon{
+
+}
+
+.line_bottom{
+}
+
+.line_bottom:hover{
+     -fx-border-width: 0 0 3px 0;
+     -fx-border-color: #15c97b;
+}
+
+.title{
+   -fx-background-color:#ffffff;
+}
+
+

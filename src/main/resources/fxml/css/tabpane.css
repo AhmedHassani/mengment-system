@@ -1,0 +1,25 @@
+.tab-pane *.tab-header-area *.tab-header-background {
+
+}
+
+.tab-pane {
+  -fx-tab-min-width:100px;
+  -fx-tab-max-width:120px;
+  -fx-tab-min-height:30px;
+  -fx-tab-max-height:30px;
+}
+
+.tab {
+  -fx-font-size: 13;
+  -fx-background-color:#fff ;
+  -fx-background-radius: 5 5 5 1;
+}
+
+.tab:selected {
+        -fx-focus-color:#15c97b;
+        -fx-faint-focus-color:#5fba7d;
+        -fx-background-color:#5fba7d;
+        -fx-text-base-color:#fff;
+}
+
+

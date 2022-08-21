@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.icon:hover{
+    -fx-background-color:#f1f1f3;
+    -fx-background-radius: 40 40 40 40;
+}
+.icon{
+   
+}
+
